@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+$bg-color: #272727;
+$bg-color-opacity: #27272774;
+$green: #14a76c;
+$green-darker: #0d5e3e;
+$orange: #ff652f;
+$yellow: #ffe400;
+$gray: #747474;
+$gray-darker: #3a3a3a;
+$orange-darker: #d45a2b;
+$yellow-darker: #b3a900;
+
+$white: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Souce Code Pro', monospace;
+  font-weight: 500;
+}
+
+body {
+  background-color: $gray-darker;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: $gray;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $orange-darker;
+  border-radius: 10px;
+}
+
+@mixin mobile-device {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet-device {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}

@@ -1,0 +1,129 @@
+@import '../../main.scss';
+
+.conventer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  .conventer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px;
+
+    @include mobile-device {
+      flex-direction: column;
+    }
+
+    .conventer__input {
+      display: flex;
+      align-items: center;
+      color: $white;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1 0 40px;
+      gap: 20px;
+
+      input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: $bg-color-opacity;
+        color: $gray;
+        font-size: 1.2rem;
+
+        &::placeholder {
+          color: $orange;
+        }
+      }
+    }
+
+    .conventer__select {
+      display: flex;
+      flex: 1 0 250px;
+      color: $white;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      gap: 20px;
+
+      select {
+        padding: 10px;
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+        background-color: $bg-color-opacity;
+        color: $gray;
+
+        font-size: 1.2rem;
+
+        option {
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: $bg-color-opacity;
+          color: $white;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .fast-switch {
+      display: flex;
+      flex: 1 0 20px;
+
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        padding: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: $bg-color-opacity;
+        color: $orange-darker;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $bg-color;
+          scale: 1.05;
+          box-shadow: inset 21px 21px 43px $bg-color,
+            inset -21px -21px 43px $bg-color-opacity;
+        }
+
+        @include mobile-device {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .result {
+    display: flex;
+    flex: 1 0 20px;
+    color: $white;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    border: 2px solid $orange-darker;
+    background-color: $bg-color-opacity;
+
+    p {
+      font-size: 1.5rem;
+      color: $orange;
+    }
+  }
+}

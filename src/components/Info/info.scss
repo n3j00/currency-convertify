@@ -1,0 +1,41 @@
+@import '../../main.scss';
+
+.info-section {
+  margin-top: 20px;
+
+  width: 100%;
+
+  .currency-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    height: 100%;
+    margin-bottom: 20px;
+
+    @include mobile-device {
+      flex-direction: column;
+
+      margin-bottom: 20px;
+    }
+    @include tablet-device {
+      flex-direction: column;
+    }
+
+    .animation {
+      width: 400px;
+      @include mobile-device {
+        width: 300px;
+      }
+    }
+    .description {
+      width: 50%;
+      text-align: left;
+      text-wrap: wrap;
+      h1 {
+        color: $white;
+      }
+    }
+  }
+}
