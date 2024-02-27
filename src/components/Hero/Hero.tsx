@@ -16,7 +16,7 @@ const Hero = () => {
         </p>
 
         <div className="hero-buttons">
-          <button className="btn" onClick={() => navigate('/convert')}>
+          <button className="btn" onClick={() => navigate('/conventer')}>
             Convert Currency
           </button>
         </div>
