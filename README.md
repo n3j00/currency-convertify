@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+# React Currency-Convertify
+Author: n3j00 / nejoo Nikodem Stach
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Check Demo: [Currency-Convertify](https://currency-conventer-one.vercel.app/)
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to the Currency-Convertify App made with React. 
 
-## Expanding the ESLint configuration
+## IMPORTANT
+For latest currency rates app uses [FreeCurrencyApi](https://app.freecurrencyapi.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Responsive
+App is mobile response.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. **Vite**
+2. **React**:
+   -**AXIOS**: [Axios](https://www.npmjs.com/package/axios)
+   - **React-Toastify**: [React-Toastify](https://www.npmjs.com/package/react-toastify)
+   - **React-Router-Dom**: [React-Router-Dom](https://reactrouter.com/en/main)
+   - **Lottie-React**: [Lottie-React](https://www.npmjs.com/package/lottie-react)
+   - **React-Icons**: [React-Icons](https://react-icons.github.io/react-icons/)
+   - **Framer-Motion**: [Framer-Motion](https://www.framer.com/motion/)
+   
+4. **TypeScript**
+5. **SCSS/CSS**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Installation
+
+1. Clone the repository:
+
+   - **HTTPS:** `git clone https://github.com/n3j00/currency-convertify.git`
+   - **SSH:** `git@github.com:n3j00/currency-convertify.git`
+
+2. Make sure you have Node.js and npm installed, then type:
+
+   ```bash
+   npm install
+
+3. Setup your .env file with template: 
+   VITE_API_KEY="yourfreecurrencyapikey" 
+  
+
+4. Run the app on your dekstip by typing:
+
+   ```bash
+   npm run dev
+   
+
+   
